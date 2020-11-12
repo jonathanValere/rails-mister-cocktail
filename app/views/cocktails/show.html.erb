@@ -1,4 +1,9 @@
 <section class="container">
     <h1><%= @cocktail.name %></h1>
-    <p><%= link_to "Bakc to list", root_path %></p>
+    <ul>
+        <% @cocktail.doses.each do |d| %>
+        <li><%= d.description %> <%= d.ingredient.name %> | <%= link_to "Remove", cocktail_dose_path, method: :delete, data: { confirm: "Are you sure ?" } %></li>
+        <% end %>
+    </ul>
+    <p><%= link_to "Add doses", new_cocktail_dose_path(@cocktail) %> | <%= link_to "Back to list", root_path %></p>
 </section>
