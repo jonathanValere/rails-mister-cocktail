@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+
+.banner {
+    background-image: asset-url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-family: "Leckerli one", sans-serif;
+  font-size: 4em;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 2px #e63946;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .9;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-align: center;
+}

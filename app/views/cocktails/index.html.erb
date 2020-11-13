@@ -1,8 +1,10 @@
 <section class="container">
-    <h1>List of cocktails</h1>
+    <h2>List of cocktails</h2>
     <ul>
         <% @cocktails.each do |c| %>
-        <li> <%= link_to c.name, cocktail_path(c) %> </li>
+        <div class="card-category" style="">
+            <li> <%= link_to c.name, cocktail_path(c) %> </li>
+        </div>
         <%end%>
     </ul>
     <p><%= link_to "Add a cocktail", new_cocktail_path %></p>

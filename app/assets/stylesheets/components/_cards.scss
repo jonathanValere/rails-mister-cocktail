@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+.card-category {
+    background-image: asset-url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Patrick Hand";
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-category:hover{
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.card-category a {
+  color: #fff;
+}
